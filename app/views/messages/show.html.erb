@@ -1,0 +1,14 @@
+<div class="col-md-8 col-md-offset-2">
+  <div class="message-show">
+      
+    <h2><%= @message.title %></h2>
+<h4><%= @message.description %></h4>
+<div class="links btn-group">
+    <%= link_to "Back",root_path, class: "btn btn-default"%>
+<%= link_to "Edit",edit_message_path(@message), class: "btn btn-default" %>
+<%= link_to "Delete",message_path(@message), method: :delete,data: {confirm: "Are you Sure to delete"}, class: "btn btn-default" %>  
+</div>
+
+  </div>  
+    
+</div>
